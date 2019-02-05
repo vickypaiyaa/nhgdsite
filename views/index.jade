@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+	block variables
+	head
+		title NHG
+	link(rel='stylesheet', href='/css/bootstrap.min.css')
+	link(rel='stylesheet', href='/style.css', type='text/css')
+	script(src='/jquery.js', type='text/javascript', crossorigin="anonymous")
+	script(src='/dashboard.js', type='text/javascript', crossorigin="anonymous")
+	body.container-fluid(style='background-color:#D0D0D0')
+		div.input-fields
+			div.row
+				div.col-sm-6
+				div.col-sm-6(style='min-height: 100%; min-height: 50vh; display: flex; align-items: center;')
+					input.form-control(placeholder="Enter/Scan IC number", autocomplete="off", required="required", type="text")
+			div.row
+				div.col-sm-6
+				div.col-sm-3(style='min-height: 30vh; display: flex; align-items: center;')
+					div.button
+						a(href='#')
+							| Go!
+							span.shift ›	
+						div.mask
+				div.col-sm-3
